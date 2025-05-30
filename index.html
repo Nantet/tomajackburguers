@@ -132,16 +132,17 @@
        <div class="contato-container">
           <h2>Fale Conosco</h2>
     
-          <p><strong>📍 Endereço:</strong> Rocha Mirand, 123 - Centro, RJ</p>
-          <p><strong>📞 Telefone:</strong> (21) 96681-9999</p>
-          <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank">(21) 96681-9999</a></p>
+          <p><strong>📍 Endereço:</strong> Rocha Miranda, 123 - RJ</p>
+          <p><strong>📞 Telefone:</strong> (21) 96681-0974</p>
+          <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/5521966810974" target="_blank">(21) 96681-0974</a></p>
           <p><strong>⏰ Horário de Atendimento:</strong> 18h às 23h</p>
 
-           <form class="form-contato" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
-              <input type="text" placeholder="Seu nome" required>
-              <input type="endereço" placeholder="Seu Endereço" required>
-              <button type="submit">Enviar</button>
-           </form>
+          <form class="form-contato" id="form-contato" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <input type="text" id="endereco" placeholder="Seu Endereço" required>
+            <button type="submit">Enviar</button>
+          </form>
+
        </div>
    </section>
    <footer>
@@ -173,5 +174,6 @@
    <script src="assets/js/status-funcionamento.js"></script>
    <script src="assets/js/carrinho.js"></script>
    <script src="assets/js/menu.js"></script>
+   <script src="assets/js/mens.js"></script>
  </body>
 </html>

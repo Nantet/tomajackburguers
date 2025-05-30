@@ -1,0 +1,24 @@
+#status-horario {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  margin: 12px auto 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  user-select: none;
+  cursor: default;
+}
+
+/* Cores para aberto e fechado */
+.aberto {
+  background-color: #28a745; /* verde */
+}
+
+.fechado {
+  background-color: #dc3545; /* vermelho */
+}
