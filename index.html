@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomaJack Burguers</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+</head>
+
+<body>
+   <header id="inicial">
+     <img src="assets/img/bg.png" alt="Foto de fundo" class="bg-img">
+
+       <nav class="nav-menu">
+         <a href="#contato"><button>Contato</button></a>
+         <a href="#cardapio1"><button>Hamburguers</button></a>
+         <a href="#cardapio2"><button>Bebidas</button></a>
+       </nav>
+
+        <div class="inicial-content">
+           <img src="assets/img/Ellipse 3.png" alt="Logo" class="logo">
+            <h1 class="texto">TomaJack Burguers</h1>
+            <div id="status-horario"></div>
+        </div>
+
+   </header>
+
+
+   <section id="cardapio1">
+     <h1>Cardápio</h1>
+      <div class="cardapio-grid">
+           <article class="card">
+             <img src="assets/cardapio1/hamb-1.png" alt="Classico Jack">
+             <h2>Classico Jack</h2>
+             <p>Pão brioche, 2 carne 70g, Alface, Bacon, queijo prato e molho da casa.</p>
+             <p class="preco">R$ 15,50</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Classico Jack', 15.50)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-2.png" alt="Toma Classico 2.0">
+             <h2>Toma Classico 2.0</h2>
+             <p>Pão brioche, 2 carne 70g, Bacon, queijo cheddar e molho da casa e 100g de batata frita.</p>
+             <p class="preco">R$ 16,00</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Toma Classico 2.0', 16.00)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-3.png" alt="Jack Feliz">
+             <h2>Jack Feliz</h2>
+             <p>Pão brioche, 2 carne 450g, Bacon, queijo cheddar e molho da casa.</p>
+             <p class="preco">R$ 18,00</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Jack Feliz', 18.00)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-4.png" alt="Pede salada, Pede">
+             <h2>Pede salada, Pede</h2>
+             <p>Pão brioche, Frango, salada de alface com tomate.</p>
+             <p class="preco">R$ 16,00</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Pede salada, Pede', 16.00)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-5.png" alt="Jack salada 2.0">
+             <h2>Jack salada 2.0</h2>
+             <p>Pão brioche, carne 100g, queijo mussarela, salada de alface com tomate e 100g de batata frita.</p>
+             <p class="preco">R$ 17,90</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Jack salada 2.0', 17.90)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-6.png" alt="Jack Especial">
+             <h2>Jack Especial</h2>
+             <p>Pão brioche, carne 90g, Bacon, salada, barbecue, queijo cheddar e molho da casa.</p>
+             <p class="preco">R$ 17,00</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Jack Especial', 17.00)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-7.png" alt="Jack Supremo">
+             <h2>Jack Supremo</h2>
+             <p>Pão brioche, carne 120g, bacon, aneis de cebola, queijo prato e molho da casa.</p>
+             <p class="preco">R$ 25,00</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Jack Supremo', 25.00)">Adicionar</button>
+           </article>
+
+           <article class="card">
+             <img src="assets/cardapio1/hamb-8.png" alt="Toma Vegetariano">
+             <h2>Toma Vegetariano</h2>
+             <p>Pão brioche, carne 90g feito de plantas, salada e molho da casa.</p>
+             <p class="preco">R$ 18,00</p>
+             <button class="adicionar-btn1" onclick="adicionarNoCarrinho('Toma Vegetariano', 18.00)">Adicionar</button>
+           </article>
+      </div>
+   </section>
+
+
+   <section id="cardapio2">
+      <h1>Bebidas</h1>
+
+       <div class="card-item">
+         <img src="assets/cardapio2/refri-1.png" alt="Coca-Cola">
+         <h2>Coca-Cola 350ml</h2>
+         <p>Refrescante e gelada, perfeita para acompanhar seu lanche.</p>
+         <p class="preco">R$ 8,00</p>
+         <button class="adicionar-btn" onclick="adicionarNoCarrinho('Coca-Cola 350ml', 8.00)">Adicionar</button>
+       </div>
+
+       <div class="card-item">
+          <img src="assets/cardapio2/refri-2.png" alt="Suco">
+          <h2>Guarana Antarctica</h2>
+          <p>Refrescante e gelada, perfeita para acompanhar seu lanche.</p>
+          <p class="preco">R$ 6,50</p>
+          <button class="adicionar-btn" onclick="adicionarNoCarrinho('Guarana Antarctica', 6.50)">Adicionar</button>
+       </div>
+   </section>
+
+   <div id="carrinho" style="display: none;">
+       <h2>Sacola</h2>
+       <ul id="lista-itens"></ul>
+       <p>Total: R$ <span id="total">0,00</span></p>
+
+       <!-- Botão de finalizar dentro da sacola -->
+       <div id="botao-finalizar" style="display: none;">
+         <button id="btn-finalizar">Finalizar Pedido</button>
+       </div>
+ </div>
+
+   <section id="contato">
+       <div class="contato-container">
+          <h2>Fale Conosco</h2>
+    
+          <p><strong>📍 Endereço:</strong> Rocha Mirand, 123 - Centro, RJ</p>
+          <p><strong>📞 Telefone:</strong> (21) 96681-9999</p>
+          <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank">(21) 96681-9999</a></p>
+          <p><strong>⏰ Horário de Atendimento:</strong> 18h às 23h</p>
+
+           <form class="form-contato" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+              <input type="text" placeholder="Seu nome" required>
+              <input type="endereço" placeholder="Seu Endereço" required>
+              <button type="submit">Enviar</button>
+           </form>
+       </div>
+   </section>
+   <footer>
+       <div class="footer-container">
+         <p>&copy; 2025 <strong>TomaJack Burguers</strong>. Todos os direitos reservados.</p>
+           <p>Desenvolvido por 
+              <a href="https://www.linkedin.com/in/renan-nantet-1b7969278" target="_blank" rel="noopener noreferrer">
+                  Renan Nantet
+               </a>
+           </p>
+       </div>
+   </footer>
+
+   <!-- Botão para abrir o menu -->
+   <button id="btn-menu" class="btn-menu">Menu ☰</button>
+
+   <!-- Overlay com blur e menu -->
+   <div id="menu-overlay" class="menu-overlay hidden">
+      <div class="menu-container">
+       <button id="btn-close" class="btn-close">×</button>
+         <nav class="menu-nav">
+         <a href="#contato"><button>Contato</button></a>
+         <a href="#cardapio1"><button>Hamburguers</button></a>
+         <a href="#cardapio2"><button>Bebidas</button></a>
+       </nav>
+      </div>
+    </div>
+
+   <script src="assets/js/status-funcionamento.js"></script>
+   <script src="assets/js/carrinho.js"></script>
+   <script src="assets/js/menu.js"></script>
+ </body>
+</html>

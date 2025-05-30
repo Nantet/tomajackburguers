@@ -1,0 +1,64 @@
+/* CSS geral permanece como está, só mexemos dentro do media query */
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  /* Fundo responsivo para celular */
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Garante que cobre todo o header */
+  object-fit: cover; /* Evita distorções */
+  z-index: -1;
+  opacity: 0.6;
+}
+
+
+  /* Container do header */
+ header#inicial {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* evita que a imagem vaze para fora */
+}
+
+
+  /* Navegação responsiva */
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* permite quebrar linhas */
+    margin-top: 15px;
+  }
+
+  /* Botões do menu para celular */
+  .nav-menu button {
+    background-color: #ff6600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+  }
+
+  .nav-menu button:hover {
+    background-color: #e65c00;
+  }
+
+  /* Ajustes logo e título no celular */
+  .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .texto {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+}
